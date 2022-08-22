@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="../css/mediaQ.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+<body>
+    <!-- background section -->
+    <div class="bg_body">
+        <img src="../image/bodyBg.jpg" alt="">
+    </div>
+    <!-- form section -->
+    <div class="formContainer">
+        <h2>Driving license renewal</h2>
+        <form action="#" class="form">
+            <!-- progress Bar Section -->
+            <div class="bar">
+                <div class="inner_bar" id="inner_bar"></div>
+            </div>
+            <h3>Let's Get Strated</h3>
+            <p>Add Your Detail(As per your registered record)</p>
+            <!-- First form section-->
+            <div class="one" id="one">
+                <div class="input_group">
+                    
+                    <label >Name</label> <br>
+                    <input type="text" name="name" id="name" placeholder="Enter Name"/>
+                </div>
+                <div class="input_group" id="firstRadio">
+                    <label >Nature of driving license</label> <br>
+                    <div class="radioGroup">
+                        <input type="radio" name="firstRadio"  /> Private
+                        <input type="radio" name="firstRadio"  /> Commercial
+                    </div>
+                </div>
+                <div class="input_group"  id="secondRadio">
+                    <label >Types of previous Driving license</label> <br>
+                    <div class="radioGroup">
+                        <input type="radio" name="secondRadio" /> Paper Driving license
+                        <input type="radio" name="secondRadio" /> Smart Driving license
+                    </div>
+                </div>
+            </div>
+            <!-- second form section -->
+            <div class="two none" id="two">
+                <div class="input_group">
+                    
+                    <label >Place where Driving license was issued</label> <br>
+                    <input type="text" name="place" id="place" placeholder="Enter Place Name" />
+                </div>
+                <div class="input_group" id="myDropdown">
+                    
+                    <label >Issued year of License</label> <br>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"> choose Issued year of License</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <div class="item">Sales</div>
+                          <div class="item">Document pickup</div>
+                          <div class="item">Document Dispatch</div>
+                          <div class="item">Document Return</div>
+                          <div class="item">Payment</div>
+                        </div>
+                      </div>
+                </div>
+                <div class="input_group" >
+                    
+                    <label >Types of Previous Driving License</label> <br>
+                    <div class="dropdown">
+                        <button onclick="myFunction2()" class="dropbtn"> choose Expired year of License</button>
+                        <div id="myDropdown2" class="dropdown-content">
+                          <a href="#">Sales-- </a>
+                          <a href="#">Document pickup-- </a>
+                          <a href="#">Document Dispatch-- </a>
+                          <a href="#">Document Return-- </a>
+                          <a href="#">Payment-- </a>
+                        </div>
+                      </div>
+                </div>
+    
+            </div>
+            <!-- back button section -->
+            <div class="input_group">
+                <div class="button">
+                    <input type="button" value="< Back ">
+                </div>
+            </div>
+        </form>
+    </div>
+    
+  
+    
+<script src="../js/index.js"></script>
+</body>
+
+</html>
